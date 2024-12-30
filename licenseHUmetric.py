@@ -62,6 +62,7 @@ while (firstQuery or pageKey is not None):
             dimensions = {}
             try:
                 dimensions["dt.entity.host"]=f"{host['hostInfo']['entityId']}"
+                dimensions["hostGroup"]=f"{host['hostInfo']['hostGroup']['name']}"
                 dimensions["configuredMonitoringMode"]=f"{host['configuredMonitoringMode']}"
                 dimensions["availabilityState"]=f"{host['availabilityState']}"
                 dimensions["monitoringType"]=f"{host['monitoringType']}"
