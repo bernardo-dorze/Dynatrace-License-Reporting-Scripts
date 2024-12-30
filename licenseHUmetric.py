@@ -48,7 +48,7 @@ pageKey = None
 while (firstQuery or pageKey is not None):
     firstQuery = False
     params = {
-        "includeDetails": "false",
+        "includeDetails": "true",
         "relativeTime": dtRelativeTime
     }
     if pageKey is not None:
